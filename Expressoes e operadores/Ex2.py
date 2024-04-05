@@ -5,10 +5,28 @@ c = int(input("Digite o valor de c: "))
 if a >= b and a >= c :
     maior = a
     if b < c:
-        print(b, c, maior)
+        menor = b
+        print(" ", menor, c, maior)
     else:
-        print(c, b, maior) 
-if b >= a and b >= c:
+        menor = c 
+        print(menor, b, maior) 
+
+if b >= a and b >= c :
     maior = b
-    if c > a:
-        print(a, c, maior)
+    
+    if a < c:
+        menor = a
+        print(menor, c, maior)
+    else:
+        menor = c 
+        print(menor, a, maior) 
+
+if c >= a and c >= b :
+    maior = c
+    
+    if b > a:
+        menor = a
+        print(menor, b, maior)
+    else:
+        menor = b
+        print(menor, a, maior) 
