@@ -9,11 +9,11 @@ for i in range (1, 10):
     x[i] = int(input("Digite um numero: "))
     if maior < x[i]:
         maior = x[i]
-        nmaior = i
+        nmaior = i + 1
 
     if menor > x[i]:
         menor = x[i]
-        nmenor = i
+        nmenor = i + 1
 
 print(x)
     
