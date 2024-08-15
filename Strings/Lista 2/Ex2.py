@@ -1,7 +1,5 @@
-nome = input("Digite um nome: ")
+nome = input("Digite seu nome: ")
 nome = nome.upper()
-lista = list(nome)
-tamanho = len(lista)
 
-for i in range (0, tamanho):
-    print(lista.strip())
+for i in range(1, len(nome + 1)):
+    print(nome[:i])
