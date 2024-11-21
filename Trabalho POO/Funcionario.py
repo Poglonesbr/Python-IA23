@@ -45,14 +45,14 @@ Funcionarios = []
 
 # Criar funcionario e adicionar informações
 def criarFuncionario(Funcionarios):
-    print("Digite as informções necessárias:")
+    print("Digite as informações necessárias:")
     _nome = input("Nome: ")
     _cargo = input("Cargo: ")
     _salario = float(input("Salario: "))
     _cpf = input("CPF: ")
     
-    ano_contratacao = int(input("Digite o ano de contratação: "))
-    mes_contratacao = int(input("Digite o mes de contratação: "))
+    ano_contratacao = int(input("Digite o ano de contratação: ")) 
+    mes_contratacao = int(input("Digite o mês de contratação: "))
     dia_contratacao = int(input("Digite o dia de contratação: "))
     _data_contratacao = datetime(ano_contratacao, mes_contratacao, dia_contratacao)
 
@@ -67,7 +67,7 @@ def atualizarFuncionario(funcionario):
     print("Qual informação você deseja atualizar?")
     print("1. Nome")
     print("2. Cargo")
-    print("3. Salario")
+    print("3. Salário")
     print("4. CPF")
     print("5. Data de Contratação")
     print("6. Cancelar Atualização")
@@ -92,7 +92,7 @@ def atualizarFuncionario(funcionario):
             mes_contratacao = int(input("Digite o mes de contratação: "))
             dia_contratacao = int(input("Digite o dia de contratação: "))
             _data_contratacao = datetime(ano_contratacao, mes_contratacao, dia_contratacao)
-            funcionario.setDataContrataca(_data_contratacao)
+            funcionario.setDataContratacao(_data_contratacao)
         case 6:
             menu()
         case _:
@@ -101,16 +101,16 @@ def atualizarFuncionario(funcionario):
         
 # Mensagem Inicial
 def mensagemInicio():
-    print("Bem vindo a lista de funcionarios\n")
+    print("Bem-vindo a lista de funcionários!\n")
     print("****************************************************")
 
 # Menu principal para as ações
-def menu(funcionario, Fucionarios):     
+def menu(funcionario, Funcionarios):     
     print("O que você deseja fazer?")
-    print("1. Criar Funcionario")
-    print("2. Listar Funcionarios")
-    print("3. Atualizar Funcionario")
-    print("4. Deletar Funcionario")
+    print("1. Criar Funcionário")
+    print("2. Listar Funcionários")
+    print("3. Atualizar Funcionário")
+    print("4. Deletar Funcionário")
     print("5. Sair")
 
     opcao_inicial = int(input("Digite o numero correspondente ao que deseja fazer: "))
@@ -124,4 +124,3 @@ def menu(funcionario, Fucionarios):
             
         case 3:
             atualizarFuncionario(funcionario)
-
