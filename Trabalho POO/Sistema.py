@@ -75,7 +75,7 @@ class System ():
 
     def atualizarFuncionario(lista_funcionarios):
         System.listarFuncionarios(lista_funcionarios)
-        escolherNome = input("Digite o indice do funcionário que deseja atualizar: ")
+        escolherNome = input("Digite o nome do funcionário que deseja atualizar: ")
         for i in range (0, len(lista_funcionarios)):
             if(escolherNome == lista_funcionarios[i].nome):
                 print("Qual informação você deseja atualizar?")
@@ -112,8 +112,7 @@ class System ():
                         case _:
                             print("O numero digitado não corresponde as opções acima, digite novamente")
                             System.atualizarFuncionario(lista_funcionarios)
-            else:
-                print("O nome digitado não existe.")
+        print("O nome digitado não existe.")
                 
     
     def deletarFuncionario(lista_funcionarios):
