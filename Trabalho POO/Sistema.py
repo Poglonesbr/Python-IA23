@@ -91,6 +91,7 @@ class System ():
 
     def atualizarFuncionario(lista_funcionarios):
         System.listarFuncionarios(lista_funcionarios)
+        escolherNome = input("Digite o nome do funcionário que deseja atualizar: ")
         escolherID = input("Digite o id do funcionário que deseja atualizar: ")
         for i in range (0, len(lista_funcionarios)):
             if(escolherID == lista_funcionarios[i].id):
