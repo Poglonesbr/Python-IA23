@@ -10,7 +10,7 @@ match dia:
     case 4:
         print("Quarta")
     case 5: 
-        print("Quinta")
+        print("Quinta")     
     case 6:
         print("Sexta")
     case 7:
